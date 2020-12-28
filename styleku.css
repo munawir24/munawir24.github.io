@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: salmon;
+}
+
+.header {
+    padding: 20px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header .judul {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+body {
+    background-color: #eaeaea;
+    background-image: url('bg.jpg');
+    background-size: auto;
+    color: #333;
+}
+
+.calculator {
+    border: 3px solid red;
+    border-radius: 5px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    margin-top: 40px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: #747171;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(241, 150, 150, 0.04));
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15);
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+}
+
+button:hover {
+    background-color: #ffef9267;
+}
+
+.operator {
+    color: #ffffff;
+}
+
+.all-clear {
+    background-color: #ff0008;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #ff0008;
+}
+
+.equal-sign {
+    background-color: rgb(0, 68, 255);
+    border-color: #ffffff;
+    color: #fff;
+    height: 100%;
+    grid-area: 3 / 4 / 7 / 5;
+}
+
+.equal-sign:hover {
+    background-color: #ffef9267;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
